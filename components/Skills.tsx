@@ -1,18 +1,18 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView, Variants } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import SectionLabel from "./ui/SectionLabel";
 
-const stagger: Variants = {
+const stagger = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.08 } },
-};
+} as const;
 
-const fadeUp: Variants = {
+const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-};
+} as const;
 
 const skillCategories = [
   {
