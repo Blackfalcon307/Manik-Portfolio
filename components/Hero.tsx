@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowDown, Download, Eye } from "lucide-react";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ const roles = [
   "AWS Specialist",
 ];
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: (i: number) => ({
     opacity: 1,
