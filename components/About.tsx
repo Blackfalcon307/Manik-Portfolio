@@ -6,12 +6,12 @@ import { GraduationCap, BookOpen, BookMarked } from "lucide-react";
 import StatCard from "./ui/StatCard";
 import SectionLabel from "./ui/SectionLabel";
 
-const fadeUp: Variants = {
+const fadeUp: any = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
-const stagger: Variants = {
+const stagger: any = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.12 } },
 };
