@@ -24,7 +24,7 @@ export default function Footer() {
             },
             {
               icon: Linkedin,
-              href: "https://linkedin.com/in/maniksood",
+              href: "https://www.linkedin.com/in/manik-sood-702b31249/",
               label: "LinkedIn",
             },
             {

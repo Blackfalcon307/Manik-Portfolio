@@ -96,7 +96,7 @@ export default function Contact() {
             className="flex items-center justify-center gap-4"
           >
             <a
-              href="https://linkedin.com/in/maniksood"
+              href="https://www.linkedin.com/in/manik-sood-702b31249/"
               target="_blank"
               rel="noopener noreferrer"
               id="contact-linkedin"
