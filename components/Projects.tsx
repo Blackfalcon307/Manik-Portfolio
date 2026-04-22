@@ -12,7 +12,11 @@ const stagger: Variants = {
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
+  },
 };
 
 const projects = [
@@ -25,7 +29,7 @@ const projects = [
     description:
       "Real-time EC2 CPU monitoring system using AWS CloudWatch APIs with IAM-based auth and threshold alerting. Handles publish delays and optimized metric query windows for efficient resource management.",
     tech: ["Python", "AWS EC2", "CloudWatch", "IAM"],
-    github: "https://github.com/maniksood365",
+    github: "https://github.com/Blackfalcon307",
     live: null,
     visual: "cloud",
   },
@@ -38,7 +42,7 @@ const projects = [
     description:
       "Highly interactive movie streaming interface with real-time exploration of 5,000+ movies, advanced filtering by genre, ratings, and popularity — with millisecond response times.",
     tech: ["React", "REST API", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/maniksood365",
+    github: "https://github.com/Blackfalcon307",
     live: "https://bingwatch.vercel.app",
     visual: "web",
   },
@@ -51,7 +55,7 @@ const projects = [
     description:
       "Real-time facial recognition attendance system using OpenCV. Detects, encodes, and matches faces from live webcam input, then auto-logs to structured storage with timestamp accuracy.",
     tech: ["Python", "OpenCV", "NumPy", "Face Recognition"],
-    github: "https://github.com/maniksood365",
+    github: "https://github.com/Blackfalcon307",
     live: null,
     visual: "ml",
   },
@@ -61,10 +65,12 @@ const VisualPlaceholder = ({ type }: { type: string }) => {
   if (type === "cloud") {
     return (
       <div className="w-full h-full flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-[#0d1f3c] to-[#0A0A0A]">
-        <div className="absolute inset-0 opacity-20"
+        <div
+          className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: 'radial-gradient(circle, #60A5FA 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
+            backgroundImage:
+              "radial-gradient(circle, #60A5FA 1px, transparent 1px)",
+            backgroundSize: "24px 24px",
           }}
         />
         <div className="relative flex flex-col items-center gap-3 p-4">
@@ -95,8 +101,11 @@ const VisualPlaceholder = ({ type }: { type: string }) => {
           <div className="bg-[#111] p-3 space-y-2">
             <div className="h-2 bg-[#A78BFA]/40 rounded w-3/4" />
             <div className="grid grid-cols-3 gap-1.5">
-              {[1, 2, 3, 4, 5, 6].map(i => (
-                <div key={i} className="h-8 bg-[#1a1a2e] rounded border border-[#333]/50" />
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div
+                  key={i}
+                  className="h-8 bg-[#1a1a2e] rounded border border-[#333]/50"
+                />
               ))}
             </div>
           </div>
@@ -122,7 +131,9 @@ const VisualPlaceholder = ({ type }: { type: string }) => {
           ))}
         </div>
         <div className="mt-3 text-center">
-          <span className="text-xs font-mono text-[#34D399]">Face Detected ✓</span>
+          <span className="text-xs font-mono text-[#34D399]">
+            Face Detected ✓
+          </span>
         </div>
       </div>
     </div>
@@ -134,7 +145,11 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="projects" ref={ref} className="py-28 lg:py-36 px-6 lg:px-12 bg-[#080808]">
+    <section
+      id="projects"
+      ref={ref}
+      className="py-28 lg:py-36 px-6 lg:px-12 bg-[#080808]"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <motion.div

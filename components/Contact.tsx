@@ -106,7 +106,7 @@ export default function Contact() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/maniksood365"
+              href="https://github.com/Blackfalcon307"
               target="_blank"
               rel="noopener noreferrer"
               id="contact-github"

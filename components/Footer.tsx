@@ -19,7 +19,7 @@ export default function Footer() {
           {[
             {
               icon: Github,
-              href: "https://github.com/maniksood365",
+              href: "https://github.com/Blackfalcon307",
               label: "GitHub",
             },
             {
